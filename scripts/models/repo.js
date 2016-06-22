@@ -6,16 +6,11 @@
   // TODO: Refactor this ajax method into a get method to the proxy
   //  'end point' provided by server.js.
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url: 'https://api.github.com/users/codefellows/repos' +
-            '?per_page=10' +
-            '&sort=updated',
-      type: 'GET',
-      headers: { 'Authorization': 'token ' + githubToken },
-      success: function(data) {
-        repos.all = data;
-      }
-    }).done(callback);
+    $.get('/github/users/codefellow-seattle-301d7/repos' +
+          '?per_page=10&sort=updated')
+          .done(function(data) {
+            repos.allRepos = data;
+          }).done(callback);
   };
 
   repos.withTheAttribute = function(attr) {
