@@ -1,3 +1,6 @@
+LIVE = https://claire-blog-301.herokuapp.com/
+
+
 ![CF](https://i.imgur.com/7v5ASc8.png)  Lab 13: Production Deployment
 =======
 [![Build Status](https://travis-ci.org/codefellows-seattle-301d4/13-production-deployment.svg?branch=master)](https://travis-ci.org/codefellows-seattle-301d7/13-production-deployment) [![GitHub issues](https://img.shields.io/badge/Stuck%3F-Ask%20for%20Help!-orange.svg)](https://github.com/codefellows/seattle-301d4/issues/new)
