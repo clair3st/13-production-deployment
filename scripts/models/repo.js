@@ -6,7 +6,7 @@
   // TODO: Refactor this ajax method into a get method to the proxy
   //  'end point' provided by server.js.
   repos.requestRepos = function(callback) {
-    $.get('/github/users/codefellow-seattle-301d7/repos' +
+    $.get('/github/users/codefellows-seattle-301d7/repos' +
           '?per_page=10&sort=updated')
           .done(function(data) {
             repos.allRepos = data;
